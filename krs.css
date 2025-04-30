@@ -1,0 +1,355 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 0.9em;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  max-width: 950px;
+  margin: 10px auto;
+  line-height: 1.6;
+  background: transparent !important;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("LOGO_UDB-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 374px 455px;
+  filter: grayscale(100%);
+  opacity: 0.1;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.kiri-section {
+  text-align: left;
+}
+
+.kanan-section {
+  margin-right: 115px;
+}
+
+.kiri-section p,
+.kanan-section p {
+  margin: 5px 0;
+}
+
+.kiri-section span {
+  display: inline-block;
+  width: 110px;
+}
+
+.kanan-section span {
+  display: inline-block;
+  width: 165px;
+}
+
+.text-kiri,
+.text-kanan {
+  margin: 0;
+  line-height: 1.5;
+}
+
+th,
+td {
+  border: 1.8px solid #000000;
+  padding: 4px;
+  text-align: center;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+
+th {
+  background-color: rgba(80, 80, 80, 0.5);
+  padding: 3px 1px;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: space-between;
+  /* Mengatur jarak antar elemen utama */
+  align-items: flex-start;
+  /* Meratakan elemen-elemen di bagian atas */
+}
+
+.img-container {
+  flex: 1;
+  /* Mengatur lebar elemen barcode */
+  text-align: left;
+  /* Meratakan barcode ke kiri */
+  margin-top: 7px;
+}
+
+.text-container {
+  flex: 5;
+  /* Mengatur lebar elemen teks */
+  display: flex;
+  justify-content: space-around;
+  /* Mengatur jarak antar elemen teks */
+}
+
+.left-text,
+.middle-text,
+.right-text {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background: transparent !important;
+}
+
+.matkul {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.ttd-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.bold {
+  margin-top: 50px;
+}
+
+.head-container {
+  justify-content: space-between;
+  display: flex;
+  max-width: 950px;
+  /*membuat elemen ditengah*/
+  margin: 10px auto;
+  /*membuat elemen ditengah*/
+  margin-top: 30px;
+  padding: 2px;
+  margin: 0px, auto;
+  margin-bottom: 2px;
+}
+
+.img-udb img {
+  display: block;
+}
+
+.img-krs {
+  margin-top: 15px;
+  padding-left: 208px;
+}
+
+.text-logo {
+  flex: 6;
+  text-align: left;
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+
+.text-logo p {
+  margin: 10px 0;
+  /* Memberikan jarak di atas dan di bawah paragraf */
+}
+
+.fakul {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.univ {
+  font-size: 28px;
+  color: rgb(14, 14, 95);
+  margin-bottom: 2px;
+}
+
+/* Membuat header dengan dua baris 
+.double-header {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  justify-content: space-around;
+}
+
+.double-header {
+  position: relative;
+}
+
+.double-header span {
+  display: block;
+  text-align: center;
+}
+*/
+.footer-1 {
+  max-width: 950px;
+  /*membuat elemen ditengah*/
+  margin: 10px auto;
+}
+
+.potong-garis {
+  padding-top: 55px;
+  font-size: 18px;
+}
+
+.text-krs {
+  padding-top: 70px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(15, 15, 108);
+  margin-bottom: 3px;
+}
+
+.info-petunjuk h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.info-petunjuk ol.text-petunjuk {
+  margin-left: 15px;
+  padding-left: 0;
+  list-style-type: decimal;
+  /* Menampilkan angka sebagai penomoran */
+  margin-bottom: 0;
+}
+
+.info-petunjuk ol.text-petunjuk li {
+  margin-bottom: 3px;
+  font-size: 16.2px;
+  letter-spacing: 0.1px;
+}
+
+.info-kendala p {
+  max-width: 950px;
+  /*membuat elemen ditengah*/
+  margin: 10px auto;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(15, 15, 108);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.info-kendala {
+  padding-top: 2px;
+  margin-bottom: 200px;
+}
+
+.halaman-page {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 17.5px;
+  letter-spacing: 0.3px;
+}
+
+/* CSS untuk halaman paraf dosen (halaman 2) */
+.page-break {
+  page-break-before: always;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #000;
+}
+
+.page-krs-2 {
+  max-width: 950px;
+  margin: 10px auto;
+  font-family: Arial, sans-serif;
+  background: transparent !important;
+  position: relative;
+}
+
+.page-krs-2::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("LOGO_UDB-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 374px 455px;
+  filter: grayscale(100%);
+  opacity: 0.1;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.header-krs-2 {
+  font-size: 16px;
+}
+
+.table-krs-2 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.table-krs-2 th,
+.table-krs-2 td {
+  border: 1.8px solid black;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-krs-2 th {
+  background-color: rgba(80, 80, 80, 0.5);
+}
+
+.matkul-krs2 {
+  font-size: 13.5px;
+  text-align: left !important;
+}
+
+.no-column {
+  width: 40px;
+}
+
+.dosen-column {
+  width: 230px;
+}
+
+.matkul-column {
+  width: 244px;
+}
+
+.paraf-header {
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.paraf-column {
+  width: 20px;
+  height: 14px;
+}
+
+.uts-cell,
+.uas-cell {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.halaman-page-2 {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 17.5px;
+  letter-spacing: 0.3px;
+}
